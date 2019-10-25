@@ -7,7 +7,10 @@ A 150 word description of the project idea, goals, dataset used. What story you 
 A list of research questions you would like to address during the project. 
 
 # Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
++ [Global Food & Agriculture Statistics](https://www.kaggle.com/unitednations/global-food-agriculture-statistics)
++ [Detailed trade matrix](http://www.fao.org/faostat/en/#data/TM)
+
+While the *Global Food & Agriculture Statistics* is a fairly large dataset (7 GB), it is splitted into several tables of managable size. We intend to use mainly the `Environment_X`, `Production_X` and `Trade_X` dataset for our purpose. The *detailed trade matrix* will assist in taking detailed trade informations into account, so that the actual consumption of countries is estimated.
 
 # A list of internal milestones up until project milestone 2
 Add here a sketch of your planning for the next project milestone.
