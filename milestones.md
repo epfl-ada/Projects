@@ -1,4 +1,4 @@
-# Milestone - overview
+# Milestones - overview
 
 ## Sprints
 
