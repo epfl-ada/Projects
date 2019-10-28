@@ -1,10 +1,10 @@
-# Is our Agriculture future-proof?
+# Is our Agriculture Future-Proof?
 
 ## Abstract
 
 The UNO (United Nation Organisation) stated in 2015 the [Sustainable Development goals for 2030](https://www.un.org/sustainabledevelopment/sustainable-development-goals/). Some of these objectives, such as the end of hunger, the response to climate change and the sustainability of our natural ressources,  play a central role in the future of our planet.
 
-Based on the Global Food & Agriculture statistics dataset, we will analyse some critical features such as food production, use of fertilizer, available fields and forest. In 2030, 8.3 billion people will live on the Earth and each challenge we face today will be harder to overcome. We will attempt to derive some conclusions about our current food and agriculture to see whether we are, or not, on the right track to reach the UNO's 17 goals by 2030; whether in the future we can live in a cleaner, safer and fairer place.
+Based on the Global Food & Agriculture statistics dataset, we will analyse some critical features such as food production, use of fertilizer, available fields and forests. In 2030, 8.3 billion people will live on the Earth and each challenge we face today will be harder to overcome. We will attempt to derive some conclusions about our current food and agriculture to see whether we are, or not, on the right track to reach the UNO's 17 goals by 2030; whether in the future we can live in a cleaner, safer and fairer place.
 
 
 ## Research questions
@@ -13,7 +13,7 @@ Based on the Global Food & Agriculture statistics dataset, we will analyse some 
 - Which regions have untapped potentials?
 - Which type of plantation do we have to keep or remove to increase production and to be more "planet friendly"?
 - How can today's agriculture help up us reach the UNO's 17 goal by 2030? In particular goal 2 (Zero hunger) and 15 (Life on land).
-- What are the drawbacks of all these advances?
+- What are the drawbacks to all these advances?
 
 ## Dataset
 
@@ -30,15 +30,15 @@ Based on the Global Food & Agriculture statistics dataset, we will analyse some 
 - Set up git repo and project skeleton
 
 ### Monday 11.11
-- Extract the food production data and choose which field are useful
-- Extract the fertilizer data and choose which field are useful
+- Extract the food production data and choose which fields are useful
+- Extract the fertilizer data and choose which fields are useful
 - Learn how to work with time series and geographical data
 
 ### Monday 18.11
-- Discuss visualization possibilites
+- Discuss visualisation possibilites
 - Do descriptive analysis
 - Establish criterion of a future-proof agriculture
-- Check if it is possible to make extrapolate from the time series
+- Check if it is possible to extrapolate from the time series
 
 ### Sunday 24.11
 - Comment and debug our code
