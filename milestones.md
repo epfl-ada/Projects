@@ -10,7 +10,7 @@
    - Understanding the data: answer question 1
 
 3. **Sprint 3 (ends 18/11):**
-   - Understanding the data: answer question 1(cont.)
+   - Understanding the data: answer question 1 (cont.)
    - Delivery for question 1
 
 4. **Sprint 4 (ends 25/11):**
