@@ -1,6 +1,6 @@
-# A milestone overview
+# Milestone - overview
 
-## Sprints:
+## Sprints
 
 1. **Sprint 1 (ends 04/11):** 
    - Data Summarization
@@ -22,7 +22,7 @@
    - Delivery
 
 
-## Epochs:
+## Epochs
 1. Data Summarization
 1. Data Wrangling
 1. Understanding the data
@@ -33,7 +33,7 @@
 1. Asking deeper questions
 1. Delivery
 
-## In more detail
+## In more detail...
 
 ### Question 1
 Answers to question 1 will depend only on the Chicago Food Inspections dataset.
