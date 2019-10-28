@@ -7,19 +7,12 @@
 
 2. **Sprint 2 (ends 11/11):**
    - Data Wrangling
-   - Understanding the data: answer question 1
-   - Delivery for question 1
 
 3. **Sprint 3 (ends 18/11):**
-   - Delivery for question 1 (cont.)
-   - Add datasets to answer questions 2 and 3
-   - Data Summarization
-   - Data Wrangling
+   - Understanding the data: answer question 1
 
 4. **Sprint 4 (ends 25/11):**
-   - Data Wrangling (cont.)
-   - Answering deeper questions: answer questions 2 and 3
-   - Delivery
+   - Delivery for question 1
 
 
 ## Epochs
