@@ -1,10 +1,10 @@
-# Is our Agriculture future-proof ?
+# Is our Agriculture future-proof?
 
 ## Abstract
 
-The UNO (United Nation Organisation) stated since 2015 the [Sustainable Development goals for 2030](https://www.un.org/sustainabledevelopment/sustainable-development-goals/). Some of these objectives, such as the end of hunger, the response to climate change and the sustainability of our natural ressources,  have a central role on the future of our planet.
+The UNO (United Nation Organisation) stated in 2015 the [Sustainable Development goals for 2030](https://www.un.org/sustainabledevelopment/sustainable-development-goals/). Some of these objectives, such as the end of hunger, the response to climate change and the sustainability of our natural ressources,  play a central role in the future of our planet.
 
-Based on the Global Food & Agriculture statistics dataset, we will analyse some critical features such as food production, use of fertilizer, available fields and forest. In 2030, 8.3 billion people will live on earth and each challenge we face today will be harder to overcome. We will attempt to derive some conclusions about our current food and agriculture to see whether we are, or not, on the right track to reach the UNO's 17 goals by 2030; whether in the future we can live in a cleaner, safer and fairer place.
+Based on the Global Food & Agriculture statistics dataset, we will analyse some critical features such as food production, use of fertilizer, available fields and forest. In 2030, 8.3 billion people will live on the Earth and each challenge we face today will be harder to overcome. We will attempt to derive some conclusions about our current food and agriculture to see whether we are, or not, on the right track to reach the UNO's 17 goals by 2030; whether in the future we can live in a cleaner, safer and fairer place.
 
 
 ## Research questions
