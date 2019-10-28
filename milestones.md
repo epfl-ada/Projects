@@ -4,16 +4,20 @@
 
 1. **Sprint 1 (ends 04/11):** 
    - Data Summarization
-
-2. **Sprint 2 (ends 11/11):**
    - Data Wrangling
 
-3. **Sprint 3 (ends 18/11):**
+2. **Sprint 2 (ends 11/11):**
    - Understanding the data: answer question 1
 
-4. **Sprint 4 (ends 25/11):**
+3. **Sprint 3 (ends 18/11):**
+   - Understanding the data: answer question 1(cont.)
    - Delivery for question 1
 
+4. **Sprint 4 (ends 25/11):**
+   - Delivery for question 1 (cont.)
+   - Add datasets to answer questions 2 and 3
+   - Data Summarization
+  
 
 ## Epochs
 1. Data Summarization
@@ -78,6 +82,9 @@ Integrate the income, ethnicity and reviews datasets.
 #### Data Wrangling
 - Same as for question 1, now for the new dataset
 - Propose a merging strategy or a strategy under which joint analysis on both datasets would be performed
+
+#### Answer deeper questions:
+- Same as part 1
 
 #### Delivery
 - Same as for question 1
