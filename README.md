@@ -1,4 +1,4 @@
-# Title
+# We are where we eat
 
 # Abstract
 We are shaped by what we eat. But we also shape where we eat.  In this project, we investigate the food scene in Chicago. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play? 
