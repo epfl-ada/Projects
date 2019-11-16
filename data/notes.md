@@ -8,7 +8,10 @@ Important definition of internal identifiers, such as country codes or flags, ca
 
 ## To Load:
 - Environment_Emissions_intensities_E_All_Data_(Normalized).csv
+
+
 ## Not to load
+
 
 ## Not evaluated yet
 - ASTI_Researchers_E_All_Data_(Norm).csv
