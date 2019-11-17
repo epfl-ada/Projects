@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Network Graph Visualization</title>
+
+    <link rel="stylesheet" href="dist/css/sitestyle.css">
+    <script type="text/javascript" src="dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/js/smoothscroll.js"></script>
+
+</head>
+
+<body>
+
+<div class="pimgpaths">
+    <a href="https://ejolles.github.io/GraphVisualization/main/html/NeutGraph.html" target="_blank">
+        <div class="ptext">
+      <span class="border">
+        Graph Visualization
+      </span>
+        </div>
+    </a>
+
+    <a href="#middle", class="smoothScroll">
+    <div class="arrow_container">
+        <div class="arrow"></div>
+    </div>
+    </a>
+</div>
+</div>
+
+
+<section id='middle' , class="section section-dark">
+    <h2>Welcome</h2>
+    <p>
+        Welcome to our neutrality project webpage.<br>
+        Our goal is to try to detect network neutrality violations with traceroute measurements.<br>
+        We created a Visualization application to show Graphs with these neutrality violations.<br>
+        On this web page we will present some functions of our Graph Visualization Application.
+    </p>
+</section>
+
+<div class="pimgworldmap">
+
+</div>
+
+<section class="section section-dark">
+    <h2>Cluster Vertices</h2>
+    <p>
+        To avoid displaying all vertices at the same time, they are clustered to show only useful data.
+    </p>
+</section>
+
+<div class="pimgcluster">
+</div>
+
+<section class="section section-dark">
+    <h2>Link colors</h2>
+    <p>
+        A link which is suspected to be non-neutral is displayed in red, otherwise it is displayed in green.
+    </p>
+</section>
+
+<div class="pimgredpaths">
+
+</div>
+
+<section class="section section-dark">
+    <h2>Clicking on router</h2>
+    <p>
+        Clicking on a router show all links related to it.
+    </p>
+</section>
+
+<div class="pimgrouterclick">
+
+</div>
+
+<section class="section section-dark">
+    <h2>Mouse on router</h2>
+    <p>
+        Positioning the mouse on a vertex shows its IP.
+    </p>
+</section>
+
+<div class="pimgrouterinfo">
+
+</div>
+
+<section class="section section-dark">
+    <h2>Mouse on link</h2>
+    <p>
+        Once an edge is displayed, positioning the mouse on a link shows useful information (source IP, destination IP,
+        neutral value).
+    </p>
+</section>
+
+<div class="pimglinkinfo">
+
+</div>
+
+<section class="section section-dark">
+    <h2>Clicking on edge</h2>
+    <p>
+        Clicking on an edge shows all paths passing through this edge.
+    </p>
+</section>
+
+<div class="pimgpaths2">
+
+</div>
+
+<section class="section section-dark">
+    <h2>Vertices Option</h2>
+    <p>
+        Using the right top menu allows to choose if routers must be displayed or not.
+    </p>
+</section>
+
+<div class="pimgpathwv">
+
+</div>
+
+<section class="section section-dark">
+    <h2>Overlapping routers</h2>
+    <p>
+        If there is routers overlapping (same position), they are disposed in spiral and can be used in the same way as
+        other vertices.
+    </p>
+</section>
+
+<div class="pimgspirale">
+</div>
+
+<section class="section section-light">
+    <a href="https://ejolles.github.io/GraphVisualization/main/html/NeutGraph.html" target="_blank">
+        <button class="button">Go to the Graph Visualization
+        </button>
+    </a>
+    <h2>Credits</h2>
+    <a href="https://people.epfl.ch/eric.jolles" target="_blank">
+        <p>Eric Jollès</p>
+    </a>
+
+    <a href="https://people.epfl.ch/katerina.argyraki" target="_blank">
+        <p>Prof. Katerina Argyraki</p>
+    </a>
+
+    <a href="https://nal.epfl.ch/" target="_blank">
+        <p>Network Architecture Lab - EPFL</p>
+    </a>
+
+    <div class="container">
+        <a href="https://www.epfl.ch" target="_blank">
+            <img src="images/Logo_EPFL.png" alt="EPFL">
+        </a>
+    </div>
+</section>
+
+</body>
+
+
+</html>
