@@ -8,7 +8,11 @@ Important definition of internal identifiers, such as country codes or flags, ca
 
 ## To Load:
 - Environment_Emissions_intensities_E_All_Data_(Normalized).csv
-
+- Emissions_Agriculture_Manure_applied_to_soils_E_All_Data_(Norm).csv
+- Emissions_Agriculture_Manure_left_on_pasture_E_All_Data_(Norm).csv
+- Emissions_Agriculture_Manure_Management_E_All_Data_(Norm).csv
+- Emissions_Agriculture_Enteric_Fermentation_E_All_Data_(Norm).csv
+- Detailed trade matrix
 
 ## Not to load
 
