@@ -1,42 +1,74 @@
 import json
 import pandas as pd
+from networkx import DiGraph, topological_sort, NetworkXUnfeasible, find_cycle
 from dotmap import DotMap
 from pathlib import Path
 
 _DEFAULT_PATHS = {
+    "def_flags": "definitions_and_standards/flags.csv",
     "emission_intensity": "global-food-agriculture-statistics/raw_files/Environment_Emissions_intensities_E_All_Data_(Normalized).csv"
 }
 
+def load_def_flags(filepath, dfs):
+    flags = pd.read_csv(
+        filepath,
+        keep_default_na=False,
+        index_col="Flag"
+    )
+    return flags
 
-def load_em_intensity(filepath):
+
+def load_em_intensity(filepath, dfs):
     return None
 
 
-
 _DFS = {
-    "emission_intensity": load_em_intensity,
+    "def_flags": {"func": load_def_flags},
+    "emission_intensity": {
+        "func": load_em_intensity,
+        "deps": ["def_flags"]
+    }
 
 }
 
 def load_df(data_dir, *df_names):
     data_dir = Path(data_dir)
+
+    # find missing df_name
+    missing = set(df_names) - _DFS.keys()
+    if missing:
+        raise ValueError(f"Unknown table names {', '.join(missing)}")
+
+    # solve dependencies
+    deps = DiGraph()
+    for df_name in df_names:
+        for dep in _DFS[df_name].get("deps", []):
+            deps.add_edge(dep, df_name)
+    try:
+        load_order = topological_sort(deps)
+    except NetworkXUnfeasible:
+        raise ValueError(f"cylic dependencies in table loading: {' -> '.join(find_cycle(deps, orientation='reverse'))}")   
+
+    # load paths
     path_file = data_dir / "df_paths.json"
+    df_paths = _DEFAULT_PATHS.copy()
     if not path_file.exists():
         with path_file.open('w') as f:
             json.dump(_DEFAULT_PATHS, f, indent=4, sort_keys=True)
-        df_path = {}
     else:
         with path_file.open() as f:
-            df_path = json.load(f)
+            df_paths.update(json.load(f))
+    #find datFrames with missing paths
+    missing = set(load_order) - df_paths.keys()
+    if missing:
+        raise ValueError(f"No path for tables {', '.join(missing)}")
     
-    result = DotMap(_dynamic=False)
-    for df_name in df_names:
-        df_path = df_path.get(df_name) or _DEFAULT_PATHS.get(df_name)
-        if df_path is None:
-            raise ValueError(f'Unknown dataframe {df_name}')
-        func = _DFS.get(df_name)
+    #load dfs
+    dfs = DotMap(_dynamic=False)
+    for df_name in load_order:
+        func = _DFS[df_name].get('func')
         if func is None:
-            raise ValueError(f"Could not load {df_name}, no loading function found")
-        result[df_name] = func(df_path)
+            raise ValueError(f'No loading function for table {df_name}')
+        dfs[df_name] = func(df_paths[df_name], dfs)
     
-    return result
+    return dfs
