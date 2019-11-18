@@ -31,7 +31,7 @@ _DFS = {
 
 }
 
-def load_df(data_dir, *df_names):
+def load_df(*df_names, data_dir="."):
     data_dir = Path(data_dir)
 
     # find missing df_name
@@ -42,10 +42,11 @@ def load_df(data_dir, *df_names):
     # solve dependencies
     deps = DiGraph()
     for df_name in df_names:
+        deps.add_node(df_name)
         for dep in _DFS[df_name].get("deps", []):
             deps.add_edge(dep, df_name)
     try:
-        load_order = topological_sort(deps)
+        load_order = list(topological_sort(deps))
     except NetworkXUnfeasible:
         raise ValueError(f"cylic dependencies in table loading: {' -> '.join(find_cycle(deps, orientation='reverse'))}")   
 
@@ -69,6 +70,6 @@ def load_df(data_dir, *df_names):
         func = _DFS[df_name].get('func')
         if func is None:
             raise ValueError(f'No loading function for table {df_name}')
-        dfs[df_name] = func(df_paths[df_name], dfs)
+        dfs[df_name] = func(data_dir / df_paths[df_name], dfs)
     
     return dfs
