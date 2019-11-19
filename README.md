@@ -1,50 +1,100 @@
-# Is our Agriculture Future-Proof?
+# There is no plan Bee without them 🐝
+A new project proposal about bees and honey
 
 ## Abstract
+Pollinators around the world play a central role in our agriculture with an estimated economic benefit of €235bn per year. Up to 75% of our crops are dependent on pollination and honeybees account for most of it. Yet, in Europe and the USA the bee population has been declining at an alarming rate during the last decades. As by-hand pollination is not an alternative, it is impossible to imagine a world without them. [1]
 
-The UNO (United Nation Organisation) stated in 2015 the [Sustainable Development goals for 2030](https://www.un.org/sustainabledevelopment/sustainable-development-goals/). Some of these objectives, such as the end of hunger, the response to climate change and the sustainability of our natural ressources,  play a central role in the future of our planet.
+With this project, we first aim at giving insights about the state of bee health and honey produced and traded using the [FAO datasets](http://www.fao.org/faostat/en/#data). Secondly, we focus on the USA using results from [US Departement of Agriculture](https://quickstats.nass.usda.gov/) in order to identify and present the main factors of bee decline. Finally, we propose a case study about almonds in California to show the consequences of a lack of bees.
 
-Based on the Global Food & Agriculture statistics dataset, we will analyse some critical features such as food production, use of fertilizer, available fields and forests. In 2030, 8.3 billion people will live on the Earth and each challenge we face today will be harder to overcome. We will attempt to derive some conclusions about our current food and agriculture to see whether we are, or not, on the right track to reach the UNO's 17 goals by 2030; whether in the future we can live in a cleaner, safer and fairer place.
+[[1](http://sos-bees.org/wp-content/uploads/2014/04/BeesInDecline.pdf)] *Bees in Decline*, Greenpeace, 2013
 
 
 ## Research questions
 
-- How can we draw conclusions about our future given the food production data?
-- Which regions have untapped potentials?
-- Which type of plantation do we have to keep or remove to increase production and to be more "planet friendly"?
-- How can today's agriculture help up us reach the UNO's 17 goal by 2030? In particular goal 2 (Zero hunger) and 15 (Life on land).
-- What are the drawbacks to all these advances?
+- How do the continents compare in terms of bee decline from 1961 to these days?
+- How do changes in honey production relate to number of beehives in Europe and the USA?
+- What are the consequences of bee decline on the patterns of honey import/export around the world?
+- What is the relation between US cases of Colony Collapse Disorder and the main factors of CCD?
+- California accounts for 80% of the world almond production, what is the impact of bees on this industry in the 21st century?
 
-## Dataset
+## Datasets
 
-- [**Global Food & Agriculture statistics**](https://www.kaggle.com/unitednations/global-food-agriculture-statistics#fao_data_land_data.csv)
-    - Use the time series to represent data for the recent years and infer knowledge for the future
-    - Geographical data, 3+ millions time series
+### Primary
+- [USDA NASS](https://quickstats.nass.usda.gov/)
+    - Datasets of the US departement of agriculture
+    - Search criterions:
+        - Sector: Animal & Products
+        - Commodity: Honey
+        - Data item: Honey, Bee colonies
+        - Geographic Level: State (or National)
+    - Available interesting datasets:
+        - Inventory (number of colonies), county / state / national level
+        - Losses, (CCD, deadout) from 2015-2019
+        - Affected by (Varroa, pesticides)
+    - Date range: 21st century
+- [Live Stock FAO](http://www.fao.org/faostat/en/#data/QA)
+    - Amount of beehives per country per year (1961-2017)
+- [Livestock Primary FAO](http://www.fao.org/faostat/en/#data/QL)
+    - Amount of produced honey per country per year (1961-2017)
+- [Crops FAO](http://www.fao.org/faostat/en/#data/QC)
+    - Amount of produced crops per country per year (1961-2017)
+    - Interesting for the case study about almond
+- [Trade Matrix FAO](http://www.fao.org/faostat/en/#data/TM)
+    - Import/Export honey quantities (tons) (and value ($)) for pairs of countries (1986-2017)
+
+### Secondary (if we find something interesting)
+- [Bee Colony Statistical Data from 1987-2017](https://data.world/finley/bee-colony-statistical-data-from-1987-2017)
+    - Cleaned dataset from the USDA available on data.world
+    - USA Average loss per state per year (2010-2017)
+        - Note: would still be interesting to use this one
+    - USA Bee Colony survey data per state per year (1987-2017)
+    - USA Bee Colony census per county per year (2002-2012)
+- [Food Balance Sheet FAO](http://www.fao.org/faostat/en/#data/FBS)
+    - Domestic supply quantities
+- [Pesticide use](http://www.fao.org/faostat/en/#data/RP)
+    - Pesticide use around the world
+    - (As of now, I didn't find something relevant with that dataset, and neonicotinoids aren't reported)
+- [Value of Agricultural Production FAO](http://www.fao.org/faostat/en/#data/QV)
+    - Gross / Net production value of honey per country per year (1961-2016)
+- [Honey production in the US by state](https://github.com/TarHeel45/Honey-Production-Dashboard)
 
 
-## A list of internal milestones up until project milestone 2
+## Ressources
 
-### Monday 4.11
-- Download data set, deep look at datasets
-- Read infos about the targets of the selected UN goals
-- Set up git repo and project skeleton
+- [Colony Collapse Disorder](https://en.wikipedia.org/wiki/Colony_collapse_disorder)
+    - Varroa
+        - APHIS report [visualization](https://bip2.beeinformed.org/state_reports/)
+            - data can be found [here](https://quickstats.nass.usda.gov/)
+        - [EPFL: AI to save the bees](https://actu.epfl.ch/news/de-l-intelligence-artificielle-pour-sauver-les-abe/)
+    - Pesticide
+        - Neonicotinoids 
+        - Imidacloprid, thiamethoxam, clothianidin, fipronil, chlorpyriphos, cypermethrin and deltamethrin. (Greenpeace, *Bees in decline*, p. 7)
+    - Climate change
+- [Information website Bee Informed](https://bip2.beeinformed.org/)
+    - Multiple data visualization of USA datasets
+- [Honey Bee research association COLOSS](https://coloss.org/)
+    - [Guidelines](https://coloss.org/statistical-guidelines-for-apis-mellifera-research/): research about bees
+    - Lots of pdf reports with some data that we could scrap about EU / CH data 
+- [Data story example about bees](https://towardsdatascience.com/whats-buzzing-with-the-bees-99f9be0bc4c6)
+    - An Exploratory Data Analytics Project Investigating Honey Bee Populations in the USA
+- [SOS-bee (Greenpeace)](http://sos-bees.org/)
+    - Situation, causes and solution to solve the bee problem
+    - Report *Bees in decline* [pdf](http://sos-bees.org/wp-content/uploads/2014/04/BeesInDecline.pdf) (48 pages but you just need to read the executive summary)
 
-### Monday 11.11
-- Extract the food production data and choose which fields are useful
-- Extract the fertilizer data and choose which fields are useful
-- Learn how to work with time series and geographical data
 
-### Monday 18.11
-- Discuss visualisation possibilites
-- Do descriptive analysis
-- Establish criterion of a future-proof agriculture
-- Check if it is possible to extrapolate from the time series
+## Ideas
 
-### Sunday 24.11
-- Comment and debug our code
-- Set up our goals and plans for the next milestone
+- **Case study**: California needs a huge amount of bee every spring to pollinate its almond trees, is there a correlation between almond production and bees ? (i.e. 2006/7 was a rough winter for bees in the States and the yield for 2007 is lower)
+    - When did California start to need bees from the rest of the USA?
+    - [Dataset for almond production FAO](http://www.fao.org/faostat/en/#data/QC) There could actually be a correlation (yield in 2007 is much lower)
+    - Has the price of almond risen?
+    - What are the insights we gain from this example?
 
 
-## Questions for TAs
-- Having data from time series up to recent days, are you aware of good techniques to extrapolate data for the future that you could share with us?
-- Do you know a good library that can represent data per country in python?
+## Technologies
+- [Chord diagram](https://plot.ly/python/v3/filled-chord-diagram/)
+- [Plotly](https://plot.ly/): interactive web visualization library
+- [Bokeh](http://bokeh.org/): interactive visualization library
+- [Folium](https://python-visualization.github.io/folium/): plot on geo data
+- Leaflet.js: technology behind Folium
+
