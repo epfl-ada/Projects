@@ -1,5 +1,10 @@
 # There is no plan Bee without them 🐝
+#### Disclaimer
+
+For Milestone 2, please consider consulting the file called [`bees.html`](bees.html) in order to see our entire work without having to run the notebook `bees.ipynb`
+
 ## Abstract
+
 Pollinators around the world play a central role in our agriculture with an estimated economic benefit of €235bn per year. Up to 75% of our crops are dependent on pollination and honey bees account for most of it. Yet, in Europe and the USA the bee population has been declining at an alarming rate during the last decades. As hand-pollination is currently not an alternative, it is hard to imagine a world without them. [1]
 
 With this project, we first aim at giving insights about the state of the population of bees, as well as the honey produced and traded using the [FAO datasets](http://www.fao.org/faostat/en/#data). Secondly, we focus on the USA using surveys from the [US Departement of Agriculture](https://quickstats.nass.usda.gov/) in order to identify and present the main factors of bee decline. Finally, we propose a case study about almonds in California to showcase the essential role of honey bees in our agriculture.
